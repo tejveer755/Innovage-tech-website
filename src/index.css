@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your global CSS file or a dedicated CSS module */
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+
+  }
+  
+
+  ::-webkit-scrollbar{
+    width: 0;
+  }
+  body{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
