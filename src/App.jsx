@@ -8,7 +8,7 @@ import Extra from './pages/Extra';
 
 function App() {
   return (
-    <div className='bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950'>
+    <div className='bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 w-[100vw] overflow-x-hidden'>
       <Homepage />
       <Divider />
       <AboutUspage />
@@ -16,7 +16,7 @@ function App() {
       <Eventpage />
       <Divider />
       <FandQPage />
-      {/* <Extra/> */}
+      <Extra/>
     </div>
   );
 }

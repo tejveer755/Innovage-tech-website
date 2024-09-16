@@ -13,7 +13,7 @@ const AboutUspage = () => {
     }, []);
 
     return (
-        <div data-aos="zoom-in-left" className="z-20 bg-gradient-to-b  from-slate-950 via-slate-900 to-slate-950 py-24 h-fit shadow-inset-left-right " id="about_us">
+        <div data-aos="zoom-in-left" className="z-20 bg-transparent py-24 h-fit shadow-inset-left-right " id="about_us">
 
             <h1 className="text-center mx-auto w-fit  text-slate-200 font-extrabold md:text-7xl text-5xl font-space-grotesk border-b-2 pb-4 ">
                 About Us
