@@ -15,6 +15,7 @@ const Eventpage = () => {
         "bg-slate-400",
         "bg-slate-400",
         "bg-slate-400",
+        "bg-slate-400",
     ];
 
     useEffect(() => {

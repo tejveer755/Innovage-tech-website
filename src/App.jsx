@@ -8,7 +8,7 @@ import Extra from './pages/Extra';
 
 function App() {
   return (
-    <div className='bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 w-[100vw] overflow-x-hidden'>
+    <div className='bg-gradient-to-b from-slate-950 via-gray-800 to-slate-950 w-[100vw] overflow-x-hidden'>
       <Extra/>
       <Homepage />
       <Divider />
