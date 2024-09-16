@@ -1,56 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import FAQItem from '../components/FAQItem';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FandQPage() {
-  const [answersVisible, setAnswersVisible] = useState({});
 
-  const handleToggleAnswer = (questionId) => {
-    setAnswersVisible((prevAnswersVisible) => ({
-      ...prevAnswersVisible,
-      [questionId]: !prevAnswersVisible[questionId],
-    }));
-  };
+  useEffect(() => {
+    AOS.init({
+        duration: 1000, // animation duration (in milliseconds)
+    });
+}, []);
+ 
+  const [FaQ, setFaQ] = useState([
+    { question: "question 1", answer: "Answer 1" },
+    { question: "question 2", answer: "Answer 2" },
+    { question: "question 3", answer: "Answer 3" },
+    { question: "question 4", answer: "Answer 4" },
+    { question: "question 4", answer: "Answer 4" },
+    { question: "question 4", answer: "Answer 4" },
+  ]);
 
   return (
-    <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-24 h-fit shadow-inset-left-right font-space-grotesk" id='faqs'>
-      <h1 className="text-center mx-auto w-fit  text-slate-200 font-extrabold text-7xl  border-b-2 pb-4 ">
+    <div data-aos="zoom-in-left" className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-24 h-fit shadow-inset-left-right font-space-grotesk" id='faqs'>
+      <h1 className="text-center mx-auto w-fit  text-slate-200 font-extrabold md:text-7xl text-5xl font-space-grotesk border-b-2 pb-4 ">
         F&Qs
       </h1>
       <div className="flex flex-col items-center mt-24 justify-center">
-        <FAQItem
-          questionId="1"
-          question="Lorem ipsum dolor sit, amet consectetur adipisicing nem, placeat pariatur?"
-          answer="Answer to question 1 ipsum dolor sit, amet consectetur adipisicing elit. Quidem ab in quas autem assumenda at est eos blanditiis "
-          answersVisible={answersVisible}
-          handleToggleAnswer={handleToggleAnswer}
-        />
-       
-        <FAQItem
-          questionId="2"
-          question="Lorem ipsum dolor sit, amet consectetur adipisicing nem, placeat pariatur?"
-          answer="Answer to question 1 ipsum dolor sit, amet consectetur adipisicing elit. Quidem ab in quas autem assumenda at est eos blanditiis "
-          answersVisible={answersVisible}
-          handleToggleAnswer={handleToggleAnswer}
-        />
-       
-        <FAQItem
-          questionId="3"
-          question="Lorem ipsum dolor sit, amet consectetur adipisicing nem, placeat pariatur?"
-          answer="Answer to question 1 ipsum dolor sit, amet consectetur adipisicing elit. Quidem ab in quas autem assumenda at est eos blanditiis "
-          answersVisible={answersVisible}
-          handleToggleAnswer={handleToggleAnswer}
-        />
-       
-        <FAQItem
-          questionId="4"
-          question="Lorem ipsum dolor sit, amet consectetur adipisicing nem, placeat pariatur?"
-          answer="Answer to question 1 ipsum dolor sit, amet consectetur adipisicing elit. Quidem ab in quas autem assumenda at est eos blanditiis "
-          answersVisible={answersVisible}
-          handleToggleAnswer={handleToggleAnswer}
-        />
-       
-        {/* Add more FAQ items here */}
-       
+
+        {FaQ.map((FaQ, index) => (
+          <FAQItem
+            key={index}
+            question={FaQ.question}
+            answer={FaQ.answer}
+          />
+        ))}
+
+
+
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import Divider from "../components/Divider";
 
 const Homepage = () => {
   return (
-    <div className="relative bg-[url('/src/assets/background-technology-desktop.jpg')] bg-cover bg-center h-screen overflow-x-hidden">
+    <div className="relative bg-[url('/src/assets/background-technology-desktop.jpg')] bg-cover bg-center pb-24 h-screen overflow-hidden">
       <Navbar />
       <Home />
       <ApplyBtn />
