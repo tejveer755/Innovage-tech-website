@@ -26,7 +26,8 @@ const Eventpage = () => {
 
     return (
         <>
-            <div data-aos="zoom-in-right" className="z-20 bg-transparent py-24 h-fit shadow-inset-left-right" id="events">
+        <span id="events"></span>
+            <div data-aos="zoom-in-right" className="z-20 bg-transparent py-24 h-fit shadow-inset-left-right" >
                 <h1 className="text-center mx-auto w-fit  text-slate-200 font-extrabold md:text-7xl text-5xl font-space-grotesk border-b-2 pb-4 ">Event Details</h1>
                 <EventContainer
                     colors={colors}
