@@ -12,6 +12,7 @@ const AboutUspage = () => {
         });
     }, []);
 
+    
     return (
         <>
             <snap id="about_us"></snap>

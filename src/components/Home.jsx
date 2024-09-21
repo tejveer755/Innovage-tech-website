@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-const Home = () => {
+const Home = ({
+  animationComplete,
+  setAnimationComplete
+}) => {
   const words = ["DRIVE INNOVATION", "SPARKING IDEAS", "IGNITE TECH"];
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopIndex, setLoopIndex] = useState(0); // To loop through words
   const [charIndex, setCharIndex] = useState(0); // To manage typing/deleting characters
   const [typingSpeed, setTypingSpeed] = useState(100); // Speed of typing
-  const [animationComplete, setAnimationComplete] = useState(false); // Stop after one full cycle
 
   useEffect(() => {
     if (animationComplete) return; // Stop the effect after one full animation cycle
