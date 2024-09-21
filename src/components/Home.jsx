@@ -41,8 +41,8 @@ const Home = () => {
   }, [charIndex, isDeleting, typingSpeed, loopIndex, words, animationComplete]);
 
   return (
-    <div className="z-20 flex flex-col items-center justify-center gap-2 text-center mt-[40vw] md:mt-44">
-      <h1 className="font-space-grotesk font-semibold text-6xl sm:text-9xl tracking-[0.4rem] mb-6 bg-gradient-to-tr from-zinc-300 via-gray-400 to-slate-500 bg-clip-text text-transparent transition-all ease-out cursor-pointer">
+    <div className="z-20 flex flex-col items-center justify-center gap-2 text-center mt-[30vw] md:mt-44">
+      <h1 className="font-space-grotesk font-bold text-[4.5rem] sm:text-9xl tracking-[0.2rem] mb-6 bg-gradient-to-tr from-zinc-300 via-gray-400 to-slate-500 bg-clip-text text-transparent transition-all ease-out ">
       {animationComplete ? "INNOVAGE TECH" : <span>&nbsp;{text}&nbsp;</span>}
       </h1>
 
