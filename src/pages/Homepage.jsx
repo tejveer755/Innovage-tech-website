@@ -71,9 +71,7 @@ const Homepage = () => {
 
         <Marquee
           pauseOnHover
-          gradient={true} // Add gradient prop
-          gradientColor="rgba(31 41 55)"
-        // gradientWidth={50}
+         
         >
           {departments.map((department) => (
             <DepartmentCard
