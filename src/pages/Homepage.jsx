@@ -64,7 +64,7 @@ const Homepage = () => {
             />
           </h1>
 
-          <p className="sm:text-2xl text-base w-80% px-6 font-space-grotesk bg-gradient-to-tl from-zinc-300 via-gray-400 to-slate-500 bg-clip-text text-transparent">
+          <p className="sm:text-2xl text-base w-80% px-6 font-space-grotesk bg-gradient-to-tl mb-16 md:mb-0 from-zinc-300 via-gray-400 to-slate-500 bg-clip-text text-transparent">
             Fueling Tomorrow’s Innovators to Transform the World of Technology
           </p>
         </div>

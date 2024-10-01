@@ -13,16 +13,22 @@ function App() {
   return (
     <Router>
       <div className='bg-gradient-to-b from-slate-950 via-gray-800 to-slate-950 w-[100vw] h-full overflow-x-hidden'>
-        <Background/>
-        <Navbar/>
+        <Background />
+        <Navbar />
 
-        {/* Define routes to navigate between pages */}
+
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          {/* <Route path="/about" element={<AboutUspage />} /> */}
-          <Route path="/event" element={<Eventpage />} />
+          <Route path='/' element={
+            <div >
+              <Homepage />
+              <Divider />
+              <Eventpage />
+              <Divider />
+              <FandQPage />
+            </div>
+          } />
+          
           <Route path="/team" element={<Team />} />
-          <Route path="/faq" element={<FandQPage />} />
         </Routes>
       </div>
     </Router>
