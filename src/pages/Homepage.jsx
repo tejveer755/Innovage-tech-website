@@ -8,8 +8,7 @@ import photographyIcon from "../assets/Photography.png";
 import { Typewriter } from "react-simple-typewriter";
 import Marquee from "react-fast-marquee";
 
-import "aos/dist/aos.css";
-import Background from "./Background";
+
 
 const Homepage = () => {
   const [departments, setDepartments] = useState([
